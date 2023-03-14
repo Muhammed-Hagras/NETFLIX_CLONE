@@ -1,0 +1,68 @@
+.banner {
+  background-size: cover;
+  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cd/Black_flag.svg"); */
+  position: relative;
+  height: 500px;
+  color: #fff;
+  object-fit: contain;
+  background-position: center center;
+  padding-top: 100px;
+}
+
+.banner__contents{
+    margin-left: 30px;
+    padding-left: 140px;
+    height: 190px;
+}
+
+.banner__title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: .3rem;
+}
+
+.banner__description{
+    width: 45rem;
+    line-height: 1.3rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 80px;
+}
+
+.banner__fade{
+    height: 7.4rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgb(37,37,37, 061)
+        #111
+    );
+}
+
+.banner__button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    -webkit-border-radius: 0.2vw;
+    -moz-border-radius: 0.2vw;
+    -ms-border-radius: 0.2vw;
+    -o-border-radius: 0.2vw;
+    padding: 0.5rem 2rem ;
+    margin-right: 1rem;
+    background-color: rgb(51,51,51,0.5);
+    padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
