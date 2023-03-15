@@ -1,13 +1,14 @@
 # Hello
 This is a Netflix-clone app using React .
 which contains some features such as:
-*Fetching Movies, series, docmentries from TMDB  API based on Categories such as: 
-    +Top rated.
-    +Trending.
-    +Action, Comedy,..
-*Using firebase for: 
-    +Auhentication 
-    +Deploying
+* Fetching Movies, series, docmentries from TMDB  API based on Categories such as: 
+  +Top rated.
+  +Trending.
+  +Action, Comedy,..
+* Using firebase for: 
+  +Auhentication 
+  +Deploying
+
 
 In the project directory, you can run:
 
