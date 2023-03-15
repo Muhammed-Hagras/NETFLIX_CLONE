@@ -1,0 +1,30 @@
+.mySignUp{
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.mySignUp > h2{
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.mySignUp h4 {
+    font-size: 20px;
+}
+
+.mySignUp h4 .signUp__gray{
+    color: gray;
+}
+
+.mySignUp h4 .signUp_link{
+    transition: all .45s ease-in;
+    -webkit-transition: all .45s ease-in;
+    -moz-transition: all .45s ease-in;
+    -ms-transition: all .45s ease-in;
+    -o-transition: all .45s ease-in;
+}
+
+.mySignUp h4 .signUp_link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

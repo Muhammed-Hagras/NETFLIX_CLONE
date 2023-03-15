@@ -1,4 +1,4 @@
-
+import firebase from "./firebase"
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCh9nLlbeqNQHUQUksopPsXgubNUYUvZzI",
@@ -11,14 +11,9 @@ const firebaseConfig = {
 
 
 
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.fireStore();
+const auth = firebase.auth();
 
-
-// npm install -g firebase-tools
-
-// firebase login
-
-// firebase init
-
-// firebase deploy
+export { auth };
+export default db;

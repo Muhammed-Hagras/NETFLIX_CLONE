@@ -14,24 +14,28 @@ export default function Row({title, fetchUrl, isLargeRow=false}) {
             return response;
         }
         fetchMovies() 
-    }, [])
-    console.log(movies)
+    }, [fetchUrl])
 
   return (
-    <div className="text-white row">
+    <div className="text-white row pt-4 ps-4">
         <h2>{title}</h2>
-        <div className=" row">
+        <div className="posts row ps-4">
         {movies.map(movie =>
-        <div className="col">
-             <Card style={{ width: '18rem' }} key={movie.id}>
+        (((isLargeRow&& movie.poster_path) || (!isLargeRow && movie.backdrop_path) )&&
+        <div className="col p-0 m-0 " key={movie.id}>
+             <Card style={{ width: '18rem' }}  className="border-0  myCard"
+             
+             >
              <Card.Img variant="top" 
+             className={`poster ${isLargeRow && "poster__Large"}"`}
              src={`${baseUrl}${isLargeRow ? movie.poster_path: movie.backdrop_path}`}
 
              alt={movie.name}
              />
            </Card>
-        )
-        </div>   )}
+        
+        </div> )
+        ) }
         </div>
     </div>
   )
